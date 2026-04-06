@@ -212,13 +212,21 @@ if uploaded:
     content    = uploaded.read()
     orig_size  = len(content) / 1024                        # KB
 
+    # st.markdown(f"""
+    # <div class="stat-box">
+    #     📂 <b>File:</b> {filename}<br>
+    #     📏 <b>Original size:</b> {orig_size:.1f} KB<br>
+    #     🔍 <b>Type:</b> {ext.upper()}
+    # </div>
+    # """, unsafe_allow_html=True) 
+
     st.markdown(f"""
-    <div class="stat-box">
-        📂 <b>File:</b> {filename}<br>
-        📏 <b>Original size:</b> {orig_size:.1f} KB<br>
-        🔍 <b>Type:</b> {ext.upper()}
-    </div>
-    """, unsafe_allow_html=True)
+<div class="stat-box" style="color:#000000 !important;">
+    <p style="color:#000000; margin:0;">📂 <b>File:</b> {filename}</p>
+    <p style="color:#000000; margin:0;">📏 <b>Original size:</b> {orig_size:.1f} KB</p>
+    <p style="color:#000000; margin:0;">🔍 <b>Type:</b> {ext.upper()}</p>
+</div>
+""", unsafe_allow_html=True)
 
     if st.button("🚀 Compress Now"):
         with st.spinner("⏳ Compressing..."):
