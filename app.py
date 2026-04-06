@@ -18,41 +18,9 @@ st.set_page_config(
     layout="centered"
 )
 
-# st.markdown("""
-#     <style>
-#         .main { background-color: #f8f9fa; }
-#         .stButton>button {
-#             background-color: #28a745;
-#             color: white;
-#             font-size: 16px;
-#             padding: 10px 28px;
-#             border-radius: 8px;
-#             border: none;
-#         }
-#         .stButton>button:hover { background-color: #218838; }
-#         .stat-box {
-#             background: #ffffff;
-#             border-radius: 10px;
-#             padding: 16px 24px;
-#             margin: 8px 0;
-#             box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-#         }
-#         .big-pct { font-size: 2rem; font-weight: 700; }
-#     </style>
-# """, unsafe_allow_html=True) 
-
 st.markdown("""
     <style>
-        .main {
-            background-color: #f8f9fa;
-            color: #000000;   /* FIX: force dark text */
-        }
-
-        /* Make all text visible */
-        body, p, div, span {
-            color: #000000 !important;
-        }
-
+        .main { background-color: #f8f9fa; }
         .stButton>button {
             background-color: #28a745;
             color: white;
@@ -61,32 +29,64 @@ st.markdown("""
             border-radius: 8px;
             border: none;
         }
-
-        .stButton>button:hover {
-            background-color: #218838;
-        }
-
+        .stButton>button:hover { background-color: #218838; }
         .stat-box {
             background: #ffffff;
-            color: #000000;   /* FIX: text visible */
             border-radius: 10px;
             padding: 16px 24px;
             margin: 8px 0;
             box-shadow: 0 2px 8px rgba(0,0,0,0.08);
         }
-
-        .big-pct {
-            font-size: 2rem;
-            font-weight: 700;
-            color: #000000;  /* FIX */
-        }
-
-        /* FIX: Streamlit markdown text visibility */
-        .stMarkdown, .stText {
-            color: #000000 !important;
-        }
+        .big-pct { font-size: 2rem; font-weight: 700; }
     </style>
-""", unsafe_allow_html=True)
+""", unsafe_allow_html=True) 
+
+# st.markdown("""
+#     <style>
+#         .main {
+#             background-color: #f8f9fa;
+#             color: #000000;   /* FIX: force dark text */
+#         }
+
+#         /* Make all text visible */
+#         body, p, div, span {
+#             color: #000000 !important;
+#         }
+
+#         .stButton>button {
+#             background-color: #28a745;
+#             color: white;
+#             font-size: 16px;
+#             padding: 10px 28px;
+#             border-radius: 8px;
+#             border: none;
+#         }
+
+#         .stButton>button:hover {
+#             background-color: #218838;
+#         }
+
+#         .stat-box {
+#             background: #ffffff;
+#             color: #000000;   /* FIX: text visible */
+#             border-radius: 10px;
+#             padding: 16px 24px;
+#             margin: 8px 0;
+#             box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+#         }
+
+#         .big-pct {
+#             font-size: 2rem;
+#             font-weight: 700;
+#             color: #000000;  /* FIX */
+#         }
+
+#         /* FIX: Streamlit markdown text visibility */
+#         .stMarkdown, .stText {
+#             color: #000000 !important;
+#         }
+#     </style>
+# """, unsafe_allow_html=True)
 
 
 # ─────────────────────────────────────────
